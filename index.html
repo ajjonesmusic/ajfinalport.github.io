@@ -63,28 +63,30 @@
 
 
         div.gallery {
-          margin: 3px auto;
-          border: 1px solid #ccc;
-          float: left;
-          width: 300px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: calc(33.33% - 10px); /* 33.33% width with margin */
+            box-sizing: border-box;
         }
 
         div.gallery:hover {
-          border: 1px solid #777;
+            border: 1px solid #777;
         }
 
         div.gallery img {
-          width: 100%;
-          height: auto;
+            width: 100%;
+            height: auto;
         }
 
         div.desc {
-          padding: 15px;
-          text-align: center;
+            padding: 15px;
+            text-align: center;
         }
             
         .gallery-row1,
-        .gallery-row2 {
+        .gallery-row2,
+        .gallery-row3 {
             display: flex;
             justify-content: center;
             align-items: center;
