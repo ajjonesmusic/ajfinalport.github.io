@@ -51,26 +51,26 @@
             margin-top: 0;
         }
 
-        .gallery-header {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 20px; /* Add space on top */
+        div.gallery {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 180px;
         }
 
-        .image-gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 10px; /* Adjusted the space on top */
+        div.gallery:hover {
+          border: 1px solid #777;
         }
 
-        .image-gallery img {
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            border: 2px solid black;
-            cursor: pointer;
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+
+        div.desc {
+          padding: 15px;
+          text-align: center;
+
         }
     </style>
 </head>
@@ -88,12 +88,27 @@
         </div>
     </div>
 
-    <div class="gallery-header">Image Gallery</div>
+   <div class="gallery">
+  <a target="_blank" href="doubletakes.png">
+    <img src="doubletakes.png" alt="Double Takes" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
 
-    <div class="image-gallery">
-        <img src="images/gallery/doubletakes.png" alt="Double Takes">
-        <img src="images/gallery/dogbones.png" alt="Dog With A Bones">
-        <img src="images/gallery/denver.png" alt="Denver">
-    </div>
+<div class="gallery">
+  <a target="_blank" href="dogbones.png">
+    <img src="dogbones.png" alt=" Dog With a Bone" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="denver.png">
+    <img src="denver.png" alt="Denver" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+
 </body>
 </html>
