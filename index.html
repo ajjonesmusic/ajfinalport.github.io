@@ -83,20 +83,22 @@
           text-align: center;
         }
             
-        .gallery-row1 {
+        .gallery-row1,
+        .gallery-row2 {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 10px 0; /* Add margin to separate rows */
             width: 100%; /* Ensure it takes the full width */
+        }
 
-        .gallery-row1 .gallery {
+        .gallery-row1 .gallery,
+        .gallery-row2 .gallery {
             margin: 5px;
         }
-        
+
         audio {
             visibility: hidden;
-
         }
     </style>
 </head>
@@ -113,7 +115,7 @@
             <p>Your about me content goes here. You can provide a brief description of yourself, your interests, and more.</p>
         </div>
     </div>
-    
+
     <div class="gallery-container">
         <div class="gallery">
             <img src="images/gallery/doubletakes.png" alt="Double Takes">
@@ -121,11 +123,11 @@
         </div>
 
         <div class="gallery">
-                <img src="images/gallery/dogbones.png" alt=" Dog With a Bone">
-                <div class="desc">Add a description of the image here</div>
+            <img src="images/gallery/dogbones.png" alt=" Dog With a Bone">
+            <div class="desc">Add a description of the image here</div>
         </div>
 
-         <div class="gallery">
+        <div class="gallery">
             <img src="images/gallery/denver.png" alt="Denver" onclick="playAudio('denveraudio')">
             <audio id="denveraudio" src="assets/audio/denveraud.wav"></audio>
             <div class="desc">Add a description of the image here</div>
@@ -133,34 +135,50 @@
     </div>
 
     <div class="gallery-row1">
-            <div class="gallery">
-                <img src="images/gallery/tennessee.png" alt="Tennessee">
-                <div class="desc">Add a description of the image here</div>
-            </div>
-            
-            <div class="gallery">
-                <img src="images/gallery/shapeshift.png" alt="Shapeshift">
-                <div class="desc">Add a description of the image here</div>
-            </div>
+        <div class="gallery">
+            <img src="images/gallery/tennessee.png" alt="Tennessee">
+            <div class="desc">Add a description of the image here</div>
+        </div>
 
-            <div class="gallery">
-                <img src="images/gallery/everybodytalks.png" alt="Everybody Talks">
-                <div class="desc">Add a description of the image here</div>
-            </div>
-    
+        <div class="gallery">
+            <img src="images/gallery/shapeshift.png" alt="Shapeshift">
+            <div class="desc">Add a description of the image here</div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/gallery/everybodytalks.png" alt="Everybody Talks">
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
+    <!-- New row of photos -->
+    <div class="gallery-row2">
+        <div class="gallery">
+            <img src="images/gallery/image1.png" alt="Image 1">
+            <div class="desc">Add a description of the image here</div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/gallery/image2.png" alt="Image 2">
+            <div class="desc">Add a description of the image here</div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/gallery/image3.png" alt="Image 3">
+            <div class="desc">Add a description of the image here</div>
+        </div>
+    </div>
+
     <script>
         function playAudio(audioId) {
             var audio = document.getElementById(audioId);
-            
+
             if (audio.paused) {
-            audio.play();
-        
+                audio.play();
             } else {
-            audio.pause();
-            audio.currentTime = 0; // Rewind to the beginning
-        }
-    }
-</script>
+                audio.pause();
+                audio.currentTime = 0; // Rewind to the beginning
+            }
         }
     </script>
 
