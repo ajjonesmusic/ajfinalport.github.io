@@ -27,6 +27,13 @@
             font-style: italic;
             color: white;
         }
+        
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 800px;
+            margin: 0 auto;
+            
          img {
             width: 20%; /* Adjust the width as needed */
             height: auto;
@@ -38,13 +45,13 @@
         }
         
         .about-me {
-            float: right; /* Float the container to the left */
-            width: 50%; /* Take up half of the available width */
-            padding: 20px; /* Add some padding for spacing */
+            padding: 20px;
+            font-size: 18px; /* Increase font size */
         }
 
         .about-me h3 {
             margin-top: 0;
+        }
         }
     </style>
 </head>
@@ -55,9 +62,11 @@
         <h2>Producer - Mixer - Arranger - Engineer</h2>
     </header>
     
-    <img src="images/saxy.JPG" alt="Description of the image">
+     <div class="content-container">
+         <img src="images/saxy.JPG" alt="Description of the image">
 
-     <div class="about-me">
-        <h3>About Me</h3>
-        <p>Your about me content goes here. You can provide a brief description of yourself, your interests, and more.</p>
+         <div class="about-me">
+            <h3>About Me</h3>
+            <p>Your about me content goes here. You can provide a brief description of yourself, your interests, and more.</p>
+        </div>
     </div>
