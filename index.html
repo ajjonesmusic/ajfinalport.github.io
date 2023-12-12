@@ -120,16 +120,16 @@
 
         <div class="gallery">
             <a target="_blank" href="images/gallery/denver.png">
-                <img src="images/gallery/denver.png" alt="Denver" onclick="playAudio('denveraud.wav')>
-                <audio id="denveraud.wav" src="assets/audio/denveraud.wav"></audio>
+                <img src="images/gallery/denver.png" alt="Denver" onclick="playAudio('denveraudio')>
+                <audio id="denveraudio" src="assets/audio/denveraud.wav"></audio>
             </a>
             <div class="desc">Add a description of the image here</div>
         </div>
     </div>
     
     <script>
-        function playAudio(songId) {
-            var audio = document.getElementById(songId);
+        function playAudio(audioId) {
+            var audio = document.getElementById(audioId);
             audio.play();
         }
 
