@@ -63,24 +63,25 @@
 
 
         div.gallery {
-          margin: 3px auto;
-          border: 1px solid #ccc;
-          float: left;
-          width: 300px;
+            margin: 5px; /* Adjusted margin for alignment */
+            border: 1px solid #ccc;
+            float: left;
+            width: calc(33.33% - 10px); /* 33.33% width with margin */
+            box-sizing: border-box;
         }
 
         div.gallery:hover {
-          border: 1px solid #777;
+            border: 1px solid #777;
         }
 
         div.gallery img {
-          width: 100%;
-          height: auto;
+            width: 100%;
+            height: auto;
         }
 
         div.desc {
-          padding: 15px;
-          text-align: center;
+            padding: 15px;
+            text-align: center;
         }
             
         .gallery-row1,
@@ -94,7 +95,7 @@
 
         .gallery-row1 .gallery,
         .gallery-row2 .gallery {
-            margin: 5px;
+            margin: 5px; /* Adjusted margin for alignment */
         }
 
         audio {
