@@ -57,7 +57,7 @@
             align-items: center;
             flex-wrap: wrap;
             padding: 30px; /* Adjust padding as needed */
-            margin: 0 20px 0 auto; /* Adjust margin as needed */
+            margin: 0 40px 0 auto; /* Adjust margin as needed */
         
         }
 
@@ -180,18 +180,18 @@
         </div>
     </div>
 
-    <script>
-        function playAudio(audioId) {
-            var audio = document.getElementById(audioId);
+   <script>
+    function playAudio(audioId) {
+        var audio = document.getElementById(audioId);
 
-            if (audio.paused) {
-                audio.play();
-            } else {
-                audio.pause();
-                audio.currentTime = 0; // Rewind to the beginning
-            }
+        if (audio.paused || audio.ended) {
+            audio.play();
+        } else {
+            audio.pause();
+            audio.currentTime = 0; // Rewind to the beginning
         }
-    </script>
+    }
+</script>
 
 </body>
 </html>
