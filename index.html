@@ -47,6 +47,20 @@
         .about-me h3 {
             margin-top: 0;
         }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
+            cursor: pointer;
+        }
         }
     </style>
 </head>
@@ -63,3 +77,10 @@
             <p>Your about me content goes here. You can provide a brief description of yourself, your interests, and more.</p>
         </div>
     </div>
+
+    <div class="image-gallery">
+         <img src="images/gallery/image1.jpg" alt="Image 1">
+         <img src="images/gallery/image1.jpg" alt="Image 1">
+         <img src="images/gallery/image1.jpg" alt="Image 1">
+    </div>
+        
