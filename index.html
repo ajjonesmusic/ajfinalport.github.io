@@ -7,31 +7,33 @@
         body {
             margin: 0;
             font-family: Times New Roman, sans-serif;
-            background-color: red; /
+            background-color: red;
         }
+
         header {
             background-color: red;
             padding: 20px;
             color: white;
             text-align: center;
-         
         }
+
         h1, h2 {
             margin: 0;
         }
+
         h2 {
             margin: 0;
             font-style: italic;
             color: white;
         }
-        
+
         .grid-container {
-            display: grid; /* Use CSS Grid for layout */
-            grid-template-columns: 1fr 1fr; /* Create two columns */
-            max-width: 800px; /* Set a maximum width for the content */
-            margin: 0 auto; /* Center the content within the grid */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 800px;
+            margin: 0 auto;
         }
-       
+
         img {
             width: 100%;
             height: auto;
@@ -48,31 +50,26 @@
         .about-me h3 {
             margin-top: 0;
         }
-        
-        .image-gallery-container {
-            text-align: center;
-            margin-top: 20px;
-        }
 
-        .image-gallery-header {
+        .gallery-header {
             font-size: 24px;
             font-weight: bold;
-            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 20px; /* Add space on top */
         }
 
         .image-gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 5px;
+            gap: 10px;
+            margin-top: 10px; /* Adjusted the space on top */
         }
 
         .image-gallery img {
-            width: 100%; /* Adjust the size of the images */
-            max-width: 200px; /* Set a maximum width to control the size */
+            width: 100%;
             height: auto;
             border: 2px solid black;
             cursor: pointer;
-        }
         }
     </style>
 </head>
@@ -81,20 +78,21 @@
         <h1>AJ Jones</h1>
         <h2>Producer - Mixer - Arranger - Engineer</h2>
     </header>
-    
-     <div class="grid-container">
-         <img src="images/saxy.JPG" alt="Description of the image">
-         <div class="about-me">
+
+    <div class="grid-container">
+        <img src="images/saxy.JPG" alt="Description of the image">
+        <div class="about-me">
             <h3>About Me</h3>
             <p>Your about me content goes here. You can provide a brief description of yourself, your interests, and more.</p>
         </div>
     </div>
-    
-    <div class="image-gallery-container">
-        <div class="image-gallery-header">Take A Listen To Some Tunes I Worked On</div>
-        <div class="image-gallery">
-         <img src="images/gallery/doubletakes.png" alt="Double Takes">
-         <img src="images/gallery/dogbones.png" alt="Dog With A Bones">
-         <img src="images/gallery/denver.png" alt="Denver">
+
+    <div class="gallery-header">Image Gallery</div>
+
+    <div class="image-gallery">
+        <img src="images/gallery/doubletakes.png" alt="Double Takes">
+        <img src="images/gallery/dogbones.png" alt="Dog With A Bones">
+        <img src="images/gallery/denver.png" alt="Denver">
     </div>
-        
+</body>
+</html>
