@@ -83,6 +83,17 @@
           text-align: center;
         }
             
+        .gallery-row1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0; /* Add margin to separate rows */
+        }
+
+        .gallery-row1 .gallery {
+            margin: 5px;
+        }
+        
         audio {
             visibility: hidden;
 
@@ -120,6 +131,22 @@
             <div class="desc">Add a description of the image here</div>
         </div>
     </div>
+
+    <div class="gallery-row1">
+            <div class="gallery">
+                <img src="images/gallery/tennessee.png" alt="Tennessee">
+                <div class="desc">Add a description of the image here</div>
+            </div>
+            
+            <div class="gallery">
+                <img src="images/gallery/shapeshift.png" alt="Shapeshift">
+                <div class="desc">Add a description of the image here</div>
+            </div>
+
+            <div class="gallery">
+                <img src="images/gallery/everybodytalks.png" alt="Everybody Talks">
+                <div class="desc">Add a description of the image here</div>
+            </div>
     
     <script>
         function playAudio(audioId) {
