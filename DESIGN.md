@@ -74,6 +74,81 @@ https://www.w3schools.com/css/css3_flexbox_container.asp I used this code for re
 
 This fixed my issue and then I decided to move on to make one of the photos play sound when clicked however, this ended up not being smart because it took me a very long time to figure out how to make a second row of photos. 
 
+The next thing I wanted to do was to be able to click on the photos in the gallery and play a snippet of the song. To do this I started by uploading more audio files.
+
+Then I put the code for the audio based on this https://www.w3schools.com/html/html5_audio.asp
+
+I messed up the path at first and also had some syntax errors. 
+
+I also created a function to play the audio when clicked. 
+
+function playAudio(audioId) {
+            var audio = document.getElementById(audioId);
+            audio.play();
+        }
+https://www.w3schools.com/jsref/prop_html_id.asp
+
+I used an element id to get the audio. 
+
+The audio still wouldnt play when I clicked on it so I went back to the w3school website and found an onClick event 
+
+https://www.w3schools.com/jsref/event_onclick.asp
+
+<img src="images/gallery/denver.png" alt="Denver" onclick="playAudio('denveraudio')">
+
+Now it was working but I realized that I needed to be able to click and stop the song. 
+
+So I changed the function to an if else statement and this worked better. 
+
+Then I added another gallery row and uploaded more photos. 
+
+i based the code off of my previous gallery. 
+
+I had to mess with the padding and margin size in order to line it all up. 
+
+Then I tried to add a second gallery row and I had a lot of trouble with this. 
+
+I kept trying to do different things but I think it ended up being that I had some of the indents incorrect. 
+
+I then had to adjust some of the margins and padding in order to line up the pictures which I always forgot I needed to do. 
+
+I then proceeded to add the audio files for each photo in the body so that they play when clicked. 
+
+I then tried to add a header before the gallery but it didnt work because I needed to add <div class="gallery-header"> in front of it
+
+I also added a header and subheader under every photo in gallery. 
+
+Then I decided to add a button that opened a link to a spotify playlist. https://www.w3schools.com/css/css3_buttons.asp
+
+I based the button off of this website's code. I then adjusted based off what I wanted. However, I kept having issues with moving it to be below the pictures but I had the <divs messed up and I think i was doing something wrong with delployment.
+
+Then I added the spotify link which I figured out how to do here https://www.w3schools.com/html/html_links.asp
+
+I made another header for the sound design section. 
+
+I then added the baseballalien audio and based the code off of what I had done previously and created a play/pause button. 
+
+I had some issues with using an mp3 so I changed the audio to a wav file. 
+
+I aslo added a video which I had a lot of trouble with. I couldn't get the video to play so I tried a bunch of things and even added a new function but 
+turns out I just needed to fix the name and path. 
+
+I then added links to youtbe videos which didnt show at first because I needed the links to be embed in. 
+
+After that I added three more buttons based off what I had previously done to link my social media. 
+
+I also added the dolly parton photo at the end for fun. 
+
+I wanted to add a contact form but when I tried to do that I couldn't figure out how to make it submit. 
+
+I also feel like the photos arent fully aligned and I couldn't figure out how to fix that either. 
+
+I had a lot of fun doing this though, I wanna make it better. 
+
+
+
+
+
 
 
 
