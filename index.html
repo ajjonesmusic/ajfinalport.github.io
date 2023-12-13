@@ -73,7 +73,6 @@
         div.gallery {
             margin: 5px; /* Adjusted margin for alignment */
             border: none;
-            float: center;
             width: calc(33.33% - 10px); /* 33.33% width with margin */
             box-sizing: border-box;
             display: flex;
@@ -268,8 +267,24 @@
             <div class="header-subheader">
                 <h3>Baseball Alien Invasion</h3>
                 <h4>This is a soundscape that is suppose to sound like you are at a baseball game and then aliens attack and everyone freaks out</h4>
+                </div>
             </div>
         </div>
+
+        <div class="gallery-container">
+        <!-- Add your sound design examples here using a similar structure as the music gallery -->
+            <div class="gallery">
+                <video width="100%" height="auto" controls>
+                <source src="assets/audio/videos/redturtle.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="header-subheader">
+                <h3>Video Title</h3>
+                <h4>Description of the video content.</h4>
+            </div>
+        </div>
+    </div>
+
         
         
 
@@ -278,19 +293,19 @@
 
 
    <script>
-    function playAudio(audioId) {
-        var audio = document.getElementById(audioId);
+        function playAudio(audioId) {
+            var audio = document.getElementById(audioId);
 
-        if (audio.paused || audio.ended) {
-            audio.play();
-        } else {
-            audio.pause();
-            audio.currentTime = 0; // Rewind to the beginning
+            if (audio.paused || audio.ended) {
+                audio.play();
+            } else {
+                audio.pause();
+                audio.currentTime = 0; // Rewind to the beginning
+            }
         }
-    }
-
+    </script>
     
-</script>
+
 
 </body>
 </html>
