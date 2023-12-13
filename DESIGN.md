@@ -20,6 +20,37 @@ https://www.w3schools.com/html/html_images.asp
 
 I looked up on the w3schools website about putting photos in HTML. 
 
+**<img src="saxy.JPG" alt="aj playing sax">**
+
+I entered this line of code however nothing showed up because I had the path wrong and had to change it to images/saxy.JPG
+
+The photo was also really big and not centered so I had to figure out how to change that. 
+
+I then changed the width of the image to 50% and added a margin-top, margin-left, and margin-right details which I read about on the w3schools.com website. https://www.w3schools.com/css/css_margin.asp
+This helped me to get the photo centered. I had to try a few different numbers till I got it where I wanted it to be. I also added a solid black border around the photo.
+
+Next, I decided to add an "about me section" next to the photo. I made another header in the body section and created the code in the top part. I tried to use "float" to try and padding to move it to where I wanted it to be however I was not able to get it to do what I wanted. 
+
+I then went back to the w3schools website and read about grid containers and used that. https://www.w3schools.com/css/css_grid_container.asp 
+      
+        **.grid-container {**
+            **display: grid;**
+            **grid-template-columns: 1fr 1fr;**
+            **max-width: 800px;**
+            **margin: 20px auto 0;**
+            **align-items: center;**
+
+I had to make a few adjustments to the image code to get everything realigned and had to add the grid container to the body. 
+
+
+
+      
+
+
+
+
+
+
 
 
 
