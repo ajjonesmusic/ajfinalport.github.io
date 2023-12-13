@@ -135,6 +135,42 @@
             background-color: green;
             color: white;
 }
+        .baby-engineer-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+}
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+}
+
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+}
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+}
+
+        .container {
+          max-width: 600px;
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
     </style>
 </head>
 <body>
@@ -313,7 +349,7 @@
     </div>
 
     <div class="baby-engineer-section">
-        <img src="images/babyengineer.jpg" alt="Description of the image" style="max-width: 50%; height: auto;">>
+        <img src="images/babyengineer.jpg" alt="Description of the image" style="max-width: 25%; height: auto;">
         <!-- Add any additional content or styling for the image if needed -->
     </div>
 </div>
@@ -321,6 +357,29 @@
     <div style="text-align: center; margin-top: 20px;">
         <a href="https://docs.google.com/document/d/1iQ8Es_Y9iKQXrJsJ3Ck6D38G_Lz20wk6lOVrs8DluWs/edit" class="playlist-button" target="_blank">Need more convincing? Click for my resume</a>
     </div>
+    
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+
 
 
 
