@@ -298,6 +298,16 @@
             audio.currentTime = 0; // Rewind to the beginning
         }
     }
+
+    var soundDesignVideo = document.getElementById("soundDesignVideo");
+
+    function toggleVideo() {
+        if (soundDesignVideo.paused || soundDesignVideo.ended) {
+            soundDesignVideo.play();
+        } else {
+            soundDesignVideo.pause();
+        }
+    }
 </script>
 
 </body>
