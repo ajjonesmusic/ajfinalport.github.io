@@ -72,6 +72,8 @@ https://www.w3schools.com/css/css3_flexbox_container.asp I used this code for re
             padding: 30px; 
             margin: 0 40px 0 auto; 
 
+This fixed my issue and then I decided to move on to make one of the photos play sound when clicked however, this ended up not being smart because it took me a very long time to figure out how to make a second row of photos. 
+
 
 
 
