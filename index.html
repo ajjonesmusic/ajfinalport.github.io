@@ -7,31 +7,33 @@
         body {
             margin: 0;
             font-family: Times New Roman, sans-serif;
-            background-color: red; /
+            background-color: red;
         }
+
         header {
             background-color: red;
             padding: 20px;
             color: white;
             text-align: center;
-         
         }
-        h1, h2 {
+
+        h1, h2, h3 {
             margin: 0;
         }
+
         h2 {
             margin: 0;
             font-style: italic;
             color: white;
         }
-        
+
         .grid-container {
-            display: grid; /* Use CSS Grid for layout */
-            grid-template-columns: 1fr 1fr; /* Create two columns */
-            max-width: 800px; /* Set a maximum width for the content */
-            margin: 0 auto; /* Center the content within the grid */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 800px;
+            margin: 0 auto;
         }
-       
+
         img {
             width: 100%;
             height: auto;
@@ -47,32 +49,76 @@
 
         .about-me h3 {
             margin-top: 0;
+            
         }
         
-        .image-gallery-container {
+        .gallery-header {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 20px; 
+            font-size: 2em; /* Adjust the font size as needed */
+            font-weight: bold; /* Adjust the font weight as needed */
+        }
+        
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px; /* Adjust padding as needed */
+            margin: 0 40px 0 auto; /* Adjust margin as needed */
+        
         }
 
-        .image-gallery-header {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
+
+        div.gallery {
+            margin: 5px; /* Adjusted margin for alignment */
+            border: none;
+            float: center;
+            width: calc(33.33% - 10px); /* 33.33% width with margin */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            
+            
         }
 
-        .image-gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
+        div.gallery:hover {
+            border: 4px solid solid white;
         }
 
-        .image-gallery img {
-            width: 100%; /* Adjust the size of the images */
-            max-width: 200px; /* Set a maximum width to control the size */
-            height: auto;
-            border: 2px solid black;
-            cursor: pointer;
+       div.gallery img {
+        width: 75%;
+        height: auto; /* Adjust the height as needed */
+        object-fit: cover;
+
         }
+
+         div.header-subheader {
+            text-align: center;
+            margin-top: 10px;
+            
+        }
+            
+        .gallery,
+        .gallery-row1,
+        .gallery-row2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0; /* Add margin to separate rows */
+            width: 100%; /* Ensure it takes the full width */
+        }
+
+        .gallery-row1 .gallery,
+        .gallery-row2 .gallery {
+            margin: 5px; /* Adjusted margin for alignment */
+        }
+
+        audio {
+            visibility: hidden;
         }
     </style>
 </head>
@@ -82,19 +128,119 @@
         <h2>Producer - Mixer - Arranger - Engineer</h2>
     </header>
     
-     <div class="grid-container">
-         <img src="images/saxy.JPG" alt="Description of the image">
-         <div class="about-me">
+
+    <div class="grid-container">
+        <img src="images/saxy.JPG" alt="Description of the image">
+        <div class="about-me">
             <h3>About Me</h3>
             <p>Your about me content goes here. You can provide a brief description of yourself, your interests, and more.</p>
         </div>
     </div>
-    
-    <div class="image-gallery-container">
-        <div class="image-gallery-header">Take A Listen To Some Tunes I Worked On</div>
-        <div class="image-gallery">
-         <img src="images/gallery/doubletakes.png" alt="Double Takes">
-         <img src="images/gallery/dogbones.png" alt="Dog With A Bones">
-         <img src="images/gallery/denver.png" alt="Denver">
+
+   <div class="gallery-header">
+        <h3>Here Are Some Awesome Tunes I Worked On</h3>
+        <p>Click on the song to take a listen</p>
     </div>
-        
+   
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="images/gallery/doubletakes.png" alt="Double Takes" onclick="playAudio('doubletakes')">
+            <audio id="doubletakes" src="assets/audio/doubletake.wav"></audio>
+            <div class="header-subheader">
+                <h3>Double Takes by Chrysalis ft Benji Jimenez</h3>
+                <h4>Produced, Engineered, Mixed</h4>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/gallery/dogbones.png" alt=" Dog With a Bone" onclick="playAudio('dogwithabone')">
+            <audio id="dogwithabone" src="assets/audio/dogwithabone.wav"></audio>
+            <div class="header-subheader">
+                <h3>Dog With A Bone by Chloe Borsody</h3>
+                <h4>Produced, Engineered, Mixed</h4>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/gallery/denver.png" alt="Denver" onclick="playAudio('denveraudio')">
+            <audio id="denveraudio" src="assets/audio/denveraud.wav"></audio>
+            <div class="header-subheader">
+                <h3>Denver by Chrysalis</h3>
+                <h4>Produced, Engineered, Mixed, Mastered</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-row1">
+        <div class="gallery">
+            <img src="images/gallery/crazy.png" alt="Crazy" onclick="playAudio('crazy')">
+            <audio id="crazy" src="assets/audio/crazy.wav"></audio>
+            <div class="header-subheader">
+                <h3>Crazy by Chrysalis ft Wesley Preis</h3>
+                <h4>Produced, Engineered, Mixed, Mastered</h4>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/gallery/demonica.png" alt="Demonica" onclick="playAudio('pray')">
+            <audio id="pray" src="assets/audio/pray.wav"></audio>
+            <div class="header-subheader">
+                <h3>Pray by Demonica</h3>
+                <h4>Engineered, Mixed, Mastered</h4>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/gallery/meetingyou.png" alt="Meeting You" onclick="playAudio('meetingyou')">
+            <audio id="meetingyou" src="assets/audio/meetingyou.wav"></audio>
+            <div class="header-subheader">
+                <h3>Meeting You by Chrysalis ft tofusmell</h3>
+                <h4>Produced, Engineered, Mixed</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-row2">
+        <div class="gallery">
+            <img src="images/gallery/handrpints.png" alt="Handprints" onclick="playAudio('handprints')">
+            <audio id="handprints" src="assets/audio/handprints.wav"></audio>
+            <div class="header-subheader">
+                <h3>Handprints by Chrysalis</h3>
+                <h4>Produced, Engineered, Mixed, Mastered</h4>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/gallery/everybodytalks.png" alt="Everybody Talks" onclick="playAudio('everybodytalks')">
+            <audio id="everybodytalks" src="assets/audio/everybodytalks.wav"></audio>
+            <div class="header-subheader">
+                <h3>Everybody Talks by 2-in-1 Shampoo ft brookswashere</h3>
+                <h4>Produced, Arranged, Mixed, Mastered</h4>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="images/gallery/tennessee.png" alt="Tennessee" onclick="playAudio('tennessee')">
+            <audio id="tennessee" src="assets/audio/tennessee.wav"></audio>
+            <div class="header-subheader">
+                <h3>Tennessee by Coco Smith</h3>
+                <h4>Produced, Engineered, Mixed</h4>
+            </div>
+        </div>
+
+
+   <script>
+    function playAudio(audioId) {
+        var audio = document.getElementById(audioId);
+
+        if (audio.paused || audio.ended) {
+            audio.play();
+        } else {
+            audio.pause();
+            audio.currentTime = 0; // Rewind to the beginning
+        }
+    }
+</script>
+
+</body>
+</html>
