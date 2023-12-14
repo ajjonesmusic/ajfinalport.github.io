@@ -126,7 +126,7 @@ Then I added the Spotify link which I figured out how to do here https://www.w3s
 
 I made another header for the sound design section. 
 
-I then added the baseballalien audio and based the code off of what I had done previously and created a play/pause button. 
+I then added the baseballalien audio and based the code off of what I had for the image gallery. 
 
 I had some issues with using an mp3 so I changed the audio to a wav file. 
 
@@ -146,6 +146,8 @@ I wanted to add a contact form but when I tried to do that I couldn't figure out
 I also feel like the photos aren't fully aligned and I couldn't figure out how to fix that either because I just ran out of time. 
 
 I had a lot of fun doing this though, I wanna make it better. 
+
+I showed my friends and they hated the red background so I changed it. 
 
 
 
