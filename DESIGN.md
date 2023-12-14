@@ -20,7 +20,7 @@ https://www.w3schools.com/html/html_images.asp
 
 I looked up on the w3schools website about putting photos in HTML. 
 
-**<img src="saxy.JPG" alt="aj playing sax">**
+<img src="saxy.JPG" alt="aj playing sax">
 
 I entered this line of code however nothing showed up because I had the path wrong and had to change it to images/saxy.JPG
 
@@ -42,8 +42,8 @@ I then went back to the w3schools website and read about grid containers and use
 
 I had to make a few adjustments to the image code to get everything realigned and had to add the grid container to the body. 
 
-The about me did not match the background color so I had to had add
-**background-color: red;** 
+The about me did not match the background color so I had to add
+background-color: red;
 I also added text align: center; to make it centered and not left. 
 
 Once I was happy with how the header and the about me section looked, I moved on to the hard part which was creating my image gallery. 
@@ -56,11 +56,11 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive
 
 I copied and pasted the code from here into my code and adjusted it as I needed to. 
 
-The photos didnt show up at first because I had to fix the "href" path and I had to delete the width and height. 
+The photos didn't show up at first because I had to fix the "href" path and I had to delete the width and height. 
 
 I also later became frustrated because every time I clicked on the photos to try and play the audio it just opened another tab. That was because I needed to get rid of the <a target="_blank" href="doubletakes.png">. 
 
-I then wanted to center the photos more. I tried to mess with the float setting in div.gallery but it didnt really do what I want so I decided to use a flexbox container. 
+I then wanted to center the photos more. I tried to mess with the float setting in div.gallery but it didn't really do what I wanted so I decided to use a flexbox container. 
 
 https://www.w3schools.com/css/css3_flexbox_container.asp I used this code for reference. and ended up with this 
 
@@ -88,9 +88,9 @@ function playAudio(audioId) {
         }
 https://www.w3schools.com/jsref/prop_html_id.asp
 
-I used an element id to get the audio. 
+I used an element ID to get the audio. 
 
-The audio still wouldnt play when I clicked on it so I went back to the w3school website and found an onClick event 
+The audio still wouldn't play when I clicked on it so I went back to the w3school website and found an onClick event 
 
 https://www.w3schools.com/jsref/event_onclick.asp
 
@@ -102,7 +102,7 @@ So I changed the function to an if else statement and this worked better.
 
 Then I added another gallery row and uploaded more photos. 
 
-i based the code off of my previous gallery. 
+I based the code on my previous gallery. 
 
 I had to mess with the padding and margin size in order to line it all up. 
 
@@ -114,15 +114,15 @@ I then had to adjust some of the margins and padding in order to line up the pic
 
 I then proceeded to add the audio files for each photo in the body so that they play when clicked. 
 
-I then tried to add a header before the gallery but it didnt work because I needed to add <div class="gallery-header"> in front of it
+I then tried to add a header before the gallery but it didn't work because I needed to add <div class="gallery-header"> in front of it
 
-I also added a header and subheader under every photo in gallery. 
+I also added a header and subheader under every photo in the gallery. 
 
-Then I decided to add a button that opened a link to a spotify playlist. https://www.w3schools.com/css/css3_buttons.asp
+Then I decided to add a button that opened a link to a Spotify playlist. https://www.w3schools.com/css/css3_buttons.asp
 
-I based the button off of this website's code. I then adjusted based off what I wanted. However, I kept having issues with moving it to be below the pictures but I had the <divs messed up and I think i was doing something wrong with delployment.
+I based the button on this website's code. I then adjusted based on what I wanted. However, I kept having issues with moving it to be below the pictures but I had the <divs messed up and I think I was doing something wrong with deployment.
 
-Then I added the spotify link which I figured out how to do here https://www.w3schools.com/html/html_links.asp
+Then I added the Spotify link which I figured out how to do here https://www.w3schools.com/html/html_links.asp
 
 I made another header for the sound design section. 
 
@@ -130,18 +130,20 @@ I then added the baseballalien audio and based the code off of what I had done p
 
 I had some issues with using an mp3 so I changed the audio to a wav file. 
 
-I aslo added a video which I had a lot of trouble with. I couldn't get the video to play so I tried a bunch of things and even added a new function but 
-turns out I just needed to fix the name and path. 
+I also added a video which I had a lot of trouble with. I couldn't get the video to play so I tried a bunch of things and even added a new function but 
+turns out I just needed to fix the name and path. I had accidentally uploaded the videos folder in the audio folder. 
 
-I then added links to youtbe videos which didnt show at first because I needed the links to be embed in. 
+I then added links to YouTube videos which didn't work at first because I needed the links to be embedded. 
 
-After that I added three more buttons based off what I had previously done to link my social media. 
+After that, I added three more buttons, based on what I had previously done, to link my social media. 
+
+I kept having issues with the div and indents because it was kind of hard for me to visualize so I had to try a few different times to get things the way I wanted.
 
 I also added the dolly parton photo at the end for fun. 
 
 I wanted to add a contact form but when I tried to do that I couldn't figure out how to make it submit. 
 
-I also feel like the photos arent fully aligned and I couldn't figure out how to fix that either. 
+I also feel like the photos aren't fully aligned and I couldn't figure out how to fix that either because I just ran out of time. 
 
 I had a lot of fun doing this though, I wanna make it better. 
 
